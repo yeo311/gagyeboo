@@ -1,5 +1,6 @@
-import Calendar from '@/components/Calendar';
+import dayjs from 'dayjs';
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return <Calendar year={2023} month={4} />;
+  redirect(dayjs().format('/YYYY/MM'));
 }

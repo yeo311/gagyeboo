@@ -1,3 +1,4 @@
+import FramerMotionContext from '@/context/FramerMotionContext';
 import './globals.css';
 import { Open_Sans } from 'next/font/google';
 
@@ -12,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en' className={openSans.className}>
       <body className='w-full max-w-screen-2xl overflow-auto mx-auto'>
-        <main>{children}</main>
+        <FramerMotionContext>{children}</FramerMotionContext>
       </body>
     </html>
   );
